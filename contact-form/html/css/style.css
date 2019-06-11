@@ -1,0 +1,192 @@
+* {
+		box-sizing: border-box;
+		transition: all 0.3s linear;
+		position: relative;
+}
+
+body {
+		background: #ddd;
+		font-family: Arial, sans-serif;
+		line-height: 120%;
+		color: #000;
+		font-size: 16px;
+}
+
+p {
+		margin: 0;
+}
+
+p a {
+		color: #07b4ff;
+		text-decoration: none;
+}
+
+p a:hover {
+		color: #000;
+		text-decoration: none;
+}
+
+.container {
+		max-width: 1200px;
+		margin: auto;
+		background: #fff;
+		padding: 0 20px;
+}
+
+.header {
+		background: url("../img/bg.png") no-repeat center bottom;
+		background-size: cover;
+		padding: 40px 40px 70px 40px;
+		text-align: right;
+}
+
+.header h1 {
+		font-weight: 400;
+		display: inline-block;
+		font-size: 40px;
+		margin: 0;
+		text-transform: capitalize;
+		line-height: normal;
+}
+
+.header h1:after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		right: 0;
+		left: -150px;
+		height: 2px;
+		background: #000;
+}
+
+.form {
+		padding: 30px 20px;
+}
+
+.form .well {
+		background: #e1f5fc;
+		padding: 40px 20px 10px 40px;
+		margin-top: 30px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+}
+
+.form .well .group {
+		flex: 50%;
+		padding: 0 20px 30px 0;
+}
+
+.form .well .group label {
+		display: block;
+		margin: 0 0 10px;
+}
+
+.form .well .group input, .form .well .group textarea {
+		display: block;
+		font-size: 16px;
+		width: 100%;
+		padding: 10px;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		background: #fff;
+}
+
+.form .well .group input:focus, .form .well .group textarea:focus {
+		outline: none;
+}
+
+.form .well .group input {
+		max-width: 420px;
+}
+
+.form .well .group small {
+		font-size: 0;
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		max-width: 420px;
+		width: 100%;
+		color: #ff0000;
+		font-style: italic;
+		text-align: right;
+}
+
+.form .well .group textarea + small {
+		max-width: none;
+		padding-right: 20px;
+}
+
+.form .well .group button {
+		padding: 15px 20px;
+		background: #07b4ff;
+		border: 0;
+		border-radius: 4px;
+		color: #fff;
+		margin: 30px 0 30px;
+		font-size: 16px;
+		cursor: pointer;
+}
+
+.form .well .group button:hover {
+		background: #000;
+}
+
+.form .well .group p {
+		font-size: 14px;
+}
+
+.form .well .group.error input, .form .well .group.error textarea {
+		border-color: #ff0000;
+}
+
+.form .well .group.error small {
+		font-size: 12px;
+}
+
+@media (max-width: 991px) {
+		body {
+				font-size: 14px;
+		}
+		.header {
+				padding: 20px 20px 40px 20px;
+		}
+		.header h1 {
+				font-size: 30px;
+		}
+		.header h1:after {
+				left: -80px;
+		}
+		.form {
+				padding: 20px;
+		}
+		.form .well {
+				margin-top: 20px;
+				padding: 20px;
+		}
+		.form .well .group {
+				flex: 100%;
+				padding: 0 0 20px;
+		}
+		.form .well .group input, .form .well .group textarea {
+				max-width: none;
+				font-size: 14px;
+		}
+		.form .well .group input + small, .form .well .group textarea + small {
+				max-width: none;
+				bottom: 0;
+				padding-right: 0;
+		}
+		.form .well .group button {
+				margin: 0 0 20px;
+		}
+}
+
+@media (max-width: 767px) {
+		.form .well .group.error small {
+				font-size: 10px;
+		}
+}
+
+/*# sourceMappingURL=style.css.map */

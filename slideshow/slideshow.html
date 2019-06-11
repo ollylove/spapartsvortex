@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slideshow</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link media="all" rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="description" content="Slideshow">
+    </head>
+    <body>
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="caption">
+                        <h1>Balboa&reg;</h1>
+                        <h2>GS - Global Series controls</h2>
+                        <p>Global Series (GS) family of hot tub control systems</p>
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="caption">
+                        <h2>Easy Installation and Service</h2>
+                        <p>Based on a common universal control platform: more feature flexibility, less installation and configuration problems.</p>
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="caption">
+                        <h2>Flexible, High Reliability, Feature Rich</h2>
+                        <p>Plastic enclosure: no water intrusion; connectors built on to the circuit board: less wires, simpler service.</p>
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="caption">
+                        <h2>Proven Reliability</h2>
+                        <p>Built using M7&reg; temperature and water flow sensing technology: maximum performance and satisfaction.</p>
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".carousel").carousel(
+                    interval: 5000;
+                );
+            })
+        </script>
+    </body>
+</html>
